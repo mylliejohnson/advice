@@ -1,38 +1,83 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: none;
+}
+
+.App{
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Advice{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  border-radius: 5px;
+  font-size: 1.2em;
+  width: 90%;
+  max-height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.advice-container {
+  background-color: #eee;
+  margin: auto;
+  padding: 50px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  display: block;
+  font-family: inherit;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  cursor: pointer;
+  font-weight: 600;
+  border-width: 3px;
+}
+
+.new-btn {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.like-btn {
+  border: none;
+  background-color: none;
+  font-size: 50px;
+  color: red;
+}
+
+.likeOn{
+  color: red;
+  margin: 0px;
+}
+
+.like-btn:hover{
+  color: red;
+}
+
+@media screen and (min-width: 767px ) {
+ 
+ .Advice{
+   width: 70%;
+ }
+
+
 }
